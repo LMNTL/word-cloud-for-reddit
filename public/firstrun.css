@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', bold;
+    background: #eee8d4;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p {
+    font-size: x-large;
+}
+
+.step {
+    flex: 1;
+    margin: 0.5em 0 0.5em 0;
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #c7bc97;
+    box-decoration-break: slice;
+    box-sizing: border-box;
+    box-shadow: 2px 2px rgba(40,40,40,0.35);
+}
+
+.step:last-child {
+    margin-bottom: 2em;
+}
+
+.step--image {
+    max-width: 80vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.step__right {
+    padding-right: 5vw;
+    padding-left: 2vw;
+    border-right: 2rem solid rgba(120, 120, 120, 0.5);
+}
+
+.step__left {
+    padding-left: 5vw;
+    padding-right: 2vw;
+    border-left: 2rem solid rgba(120, 120, 120, 0.5);
+}
+
+.logo {
+    max-height: 2rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    bottom: 0px;
+    text-align: center;
+    background: #c7bc97;
+}
+
+@media only screen and (min-width: 900px) {
+    .steps {
+        height: 90vh;
+    }
+    .step {
+        flex-direction: row;
+        max-height: 20vh;
+        width: 90%;
+        margin: auto;
+    }
+    .step--image {
+        max-height: 25vh;
+    }
+    .step__right {
+        flex-direction: row-reverse;
+    }
+}
